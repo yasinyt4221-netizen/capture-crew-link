@@ -9,7 +9,7 @@ Edit `js/app.js` and replace:
 - `website`
 - `whatsappNumber`
 - `instagram`
-- `twitter`
+- `tiktok`
 - `facebook`
 
 The WhatsApp URL is generated with the proper `https://wa.me/` deep-link format.

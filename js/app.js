@@ -1,17 +1,17 @@
 const links = {
-  website: "https://capturecrew.com/",
-  whatsappNumber: "919886832275",
-  whatsappMessage: "Hi Capture Crew, I would like to enquire about video production or photography services.",
-  instagram: "https://www.instagram.com/capturecrewproductions/",
-  twitter: "https://twitter.com/capturecrewprod",
-  facebook: "https://www.facebook.com/capturecrew/"
+  website: "https://example.com",
+  whatsappNumber: "447000000000",
+  whatsappMessage: "Hi Capture Crew, I would like to enquire about photography or videography.",
+  instagram: "https://www.instagram.com/",
+  tiktok: "https://www.tiktok.com/",
+  facebook: "https://www.facebook.com/"
 };
 
 const selectors = {
   websiteLink: document.getElementById("websiteLink"),
   whatsappLink: document.getElementById("whatsappLink"),
   instagramLink: document.getElementById("instagramLink"),
-  twitterLink: document.getElementById("twitterLink"),
+  tiktokLink: document.getElementById("tiktokLink"),
   facebookLink: document.getElementById("facebookLink")
 };
 
@@ -20,7 +20,7 @@ const whatsappHref = `https://wa.me/${links.whatsappNumber}?text=${encodeURIComp
 selectors.websiteLink.href = links.website;
 selectors.whatsappLink.href = whatsappHref;
 selectors.instagramLink.href = links.instagram;
-selectors.twitterLink.href = links.twitter;
+selectors.tiktokLink.href = links.tiktok;
 selectors.facebookLink.href = links.facebook;
 
 const scene = document.querySelector(".scene");
