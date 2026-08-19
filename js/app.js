@@ -26,10 +26,9 @@ applyLink(selectors.brandWebsiteLink, links.website);
 applyLink(selectors.websiteLink, links.website);
 applyLink(selectors.whatsappLink, links.whatsapp);
 
-const scene = document.querySelector(".scene");
 const canAnimate = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
 
-if (scene && canAnimate) {
+if (canAnimate) {
   let frame = null;
 
   window.addEventListener(
@@ -41,8 +40,8 @@ if (scene && canAnimate) {
         const x = (event.clientX / window.innerWidth - 0.5) * -10;
         const y = (event.clientY / window.innerHeight - 0.5) * -8;
 
-        scene.style.setProperty("--parallax-x", `${x}px`);
-        scene.style.setProperty("--parallax-y", `${y}px`);
+        document.documentElement.style.setProperty("--parallax-x", `${x}px`);
+        document.documentElement.style.setProperty("--parallax-y", `${y}px`);
         frame = null;
       });
     },

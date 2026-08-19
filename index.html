@@ -6,15 +6,21 @@
   <meta name="theme-color" content="#070101" />
   <meta
     name="description"
-    content="Capture Crew links."
+    content="Capture Crew cinematic shoots, reels, events, and brand visuals."
   />
   <meta property="og:title" content="Capture Crew" />
   <meta
     property="og:description"
-    content="Chat with Capture Crew or visit the website."
+    content="Premium cinematic shoots, reels, events, and brand visuals."
   />
   <meta property="og:type" content="website" />
-  <title>Capture Crew</title>
+  <title>Capture Crew | Book a Shoot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
   <link rel="preload" as="image" href="assets/capture-crew-wordmark-960.png" />
   <link rel="preload" as="image" href="assets/capture-crew-black-red-hero.jpg" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -22,6 +28,11 @@
 <body>
   <div class="scene" aria-hidden="true"></div>
   <div class="particles" aria-hidden="true"></div>
+  <div class="cinema-shapes" aria-hidden="true">
+    <span class="shape shape-lens"></span>
+    <span class="shape shape-prism"></span>
+    <span class="shape shape-frame"></span>
+  </div>
 
   <div class="page">
     <header class="brand reveal" style="--delay: 60ms">
@@ -31,8 +42,22 @@
     </header>
 
     <main class="hero" id="main">
-      <section class="hero-panel link-panel" aria-label="Capture Crew links">
-        <div class="actions reveal" style="--delay: 140ms" aria-label="Primary links">
+      <section class="hero-panel link-panel" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <div class="mini-rig reveal" style="--delay: 100ms" aria-hidden="true">
+            <span class="mini-lens"></span>
+          </div>
+          <p class="overline reveal" style="--delay: 140ms">Cinematic shoots | Reels | Events</p>
+          <h1 class="reveal" id="page-title" style="--delay: 190ms">
+            <span>We Capture.</span>
+            <span>You Remember.</span>
+          </h1>
+          <p class="lead reveal" style="--delay: 240ms">
+            Premium event films, reels, and brand visuals with the signature Capture Crew look.
+          </p>
+        </div>
+
+        <div class="actions reveal" style="--delay: 300ms" aria-label="Primary links">
           <a class="cta cta-whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener noreferrer">
             <span class="icon-3d icon-whatsapp" aria-hidden="true">
               <img src="assets/icon-whatsapp-3d.svg" width="56" height="56" alt="" decoding="async" />
@@ -62,6 +87,12 @@
               </svg>
             </span>
           </a>
+        </div>
+
+        <div class="proof-strip reveal" style="--delay: 360ms" aria-label="Capture Crew highlights">
+          <span><strong>1000+</strong> projects</span>
+          <span><strong>250+</strong> edits</span>
+          <span><strong>100+</strong> events</span>
         </div>
       </section>
     </main>
