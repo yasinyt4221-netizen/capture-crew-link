@@ -1,27 +1,33 @@
 const links = {
-  website: "https://example.com",
-  whatsappNumber: "447000000000",
-  whatsappMessage: "Hi Capture Crew, I would like to enquire about photography or videography.",
-  instagram: "https://www.instagram.com/",
-  tiktok: "https://www.tiktok.com/",
-  facebook: "https://www.facebook.com/"
+  website: "https://yasinyt4221-netizen.github.io/Capture-Crew/?v=instagram-dm-final",
+  whatsapp: "https://wa.me/917396906771?text=Hi%20Capture%20Crew%2C%20I%20would%20like%20to%20enquire%20about%20a%20shoot.",
+  instagram: "https://www.instagram.com/capture_crew_hh/"
 };
 
 const selectors = {
+  brandWebsiteLink: document.getElementById("brandWebsiteLink"),
   websiteLink: document.getElementById("websiteLink"),
   whatsappLink: document.getElementById("whatsappLink"),
-  instagramLink: document.getElementById("instagramLink"),
-  tiktokLink: document.getElementById("tiktokLink"),
-  facebookLink: document.getElementById("facebookLink")
+  instagramLink: document.getElementById("instagramLink")
 };
 
-const whatsappHref = `https://wa.me/${links.whatsappNumber}?text=${encodeURIComponent(links.whatsappMessage)}`;
+const applyLink = (element, href) => {
+  if (!element) return;
 
-selectors.websiteLink.href = links.website;
-selectors.whatsappLink.href = whatsappHref;
-selectors.instagramLink.href = links.instagram;
-selectors.tiktokLink.href = links.tiktok;
-selectors.facebookLink.href = links.facebook;
+  if (!href) {
+    element.href = "#";
+    element.setAttribute("aria-disabled", "true");
+    element.addEventListener("click", (event) => event.preventDefault());
+    return;
+  }
+
+  element.href = href;
+};
+
+applyLink(selectors.brandWebsiteLink, links.website);
+applyLink(selectors.websiteLink, links.website);
+applyLink(selectors.whatsappLink, links.whatsapp);
+applyLink(selectors.instagramLink, links.instagram);
 
 const scene = document.querySelector(".scene");
 const canAnimate = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
@@ -35,8 +41,8 @@ if (scene && canAnimate) {
       if (frame) return;
 
       frame = window.requestAnimationFrame(() => {
-        const x = (event.clientX / window.innerWidth - 0.5) * -12;
-        const y = (event.clientY / window.innerHeight - 0.5) * -10;
+        const x = (event.clientX / window.innerWidth - 0.5) * -10;
+        const y = (event.clientY / window.innerHeight - 0.5) * -8;
 
         scene.style.setProperty("--parallax-x", `${x}px`);
         scene.style.setProperty("--parallax-y", `${y}px`);

@@ -1,18 +1,14 @@
-# Capture Crew Instagram Landing Page
+# Capture Crew Bio Landing Page
 
-Premium mobile-first landing page for Capture Crew's Instagram bio link.
+Premium mobile-first landing page for Capture Crew HH's Instagram bio link.
 
-## Update Links
+## Links
 
-Edit `js/app.js` and replace:
+Edit `js/app.js` and update:
 
-- `website`
-- `whatsappNumber`
-- `instagram`
-- `tiktok`
-- `facebook`
-
-The WhatsApp URL is generated with the proper `https://wa.me/` deep-link format.
+- `website`: Capture Crew website / portfolio page
+- `whatsapp`: WhatsApp deep link for `+91 7396906771`
+- `instagram`: Capture Crew Instagram profile
 
 ## Deploy
 
