@@ -1,14 +1,12 @@
 const links = {
   website: "https://yasinyt4221-netizen.github.io/Capture-Crew/?v=instagram-dm-final",
-  whatsapp: "https://wa.me/917396906771?text=Hi%20Capture%20Crew%2C%20I%20would%20like%20to%20enquire%20about%20a%20shoot.",
-  instagram: "https://www.instagram.com/capture_crew_hh/"
+  whatsapp: "https://wa.me/917396906771?text=Hi%20Capture%20Crew%2C%20I%20would%20like%20to%20enquire%20about%20a%20shoot."
 };
 
 const selectors = {
   brandWebsiteLink: document.getElementById("brandWebsiteLink"),
   websiteLink: document.getElementById("websiteLink"),
-  whatsappLink: document.getElementById("whatsappLink"),
-  instagramLink: document.getElementById("instagramLink")
+  whatsappLink: document.getElementById("whatsappLink")
 };
 
 const applyLink = (element, href) => {
@@ -27,7 +25,6 @@ const applyLink = (element, href) => {
 applyLink(selectors.brandWebsiteLink, links.website);
 applyLink(selectors.websiteLink, links.website);
 applyLink(selectors.whatsappLink, links.whatsapp);
-applyLink(selectors.instagramLink, links.instagram);
 
 const scene = document.querySelector(".scene");
 const canAnimate = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;

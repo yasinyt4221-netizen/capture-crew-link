@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Website">
+  <defs>
+    <linearGradient id="tile" x1="19" y1="13" x2="75" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffaf7"/>
+      <stop offset=".48" stop-color="#ffd9d4"/>
+      <stop offset="1" stop-color="#ff1b1b"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="24" y1="26" x2="72" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f20f0f"/>
+      <stop offset="1" stop-color="#760000"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="96" height="96" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#150000" flood-opacity=".36"/>
+      <feDropShadow dx="5" dy="7" stdDeviation="0" flood-color="#8f0000" flood-opacity=".52"/>
+    </filter>
+  </defs>
+  <ellipse cx="48" cy="82" rx="30" ry="7" fill="#2a0000" opacity=".32"/>
+  <g filter="url(#shadow)">
+    <rect x="16" y="12" width="64" height="64" rx="14" fill="url(#tile)"/>
+    <rect x="23" y="24" width="50" height="42" rx="9" fill="url(#screen)"/>
+    <circle cx="30" cy="18.5" r="2.3" fill="#ff1f1f"/>
+    <circle cx="38" cy="18.5" r="2.3" fill="#ffffff" opacity=".86"/>
+    <circle cx="46" cy="18.5" r="2.3" fill="#1b0505" opacity=".62"/>
+    <path d="M29 40h38M29 50h38" fill="none" stroke="#fff7f2" stroke-linecap="round" stroke-width="3.2" opacity=".72"/>
+    <circle cx="48" cy="45" r="15" fill="none" stroke="#fff7f2" stroke-width="3.5"/>
+    <path d="M33 45h30M48 30c5 5.4 7.5 10.4 7.5 15S53 54.6 48 60M48 30c-5 5.4-7.5 10.4-7.5 15S43 54.6 48 60" fill="none" stroke="#fff7f2" stroke-linecap="round" stroke-width="2.8"/>
+    <path d="M23 28c6-5 18-8 35-6" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.4" opacity=".38"/>
+  </g>
+</svg>
