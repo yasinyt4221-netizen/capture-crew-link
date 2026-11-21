@@ -7,7 +7,7 @@ Premium mobile-first landing page for Capture Crew HH's Instagram bio link, focu
 Edit `js/app.js` and update:
 
 - `website`: Capture Crew website / portfolio page
-- `whatsapp`: WhatsApp deep link for `+91 7396906771`
+- `whatsapp`: WhatsApp deep link for `+91 6302768485`
 
 ## Deploy
 

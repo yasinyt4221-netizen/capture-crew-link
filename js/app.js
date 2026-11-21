@@ -1,6 +1,6 @@
 const links = {
   website: "https://yasinyt4221-netizen.github.io/Capture-Crew/?v=instagram-dm-final",
-  whatsapp: "https://wa.me/917396906771?text=Hi%20Capture%20Crew%2C%20I%20would%20like%20to%20enquire%20about%20a%20shoot."
+  whatsapp: "https://wa.me/916302768485?text=Hi%20Capture%20Crew%2C%20I%20would%20like%20to%20enquire%20about%20a%20shoot."
 };
 
 const selectors = {
